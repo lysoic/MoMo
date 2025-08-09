@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ashen Knight - Dasfel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Audio - 只在The Ashen Knight页面播放 -->
+    <audio id="background-music" loop>
+        <source src="aud.mp3" type="audio/mp3">
+        您的浏览器不支持音频元素。
+    </audio>
+    <div class="page-content">
+        <!-- Navigation Icon -->
+        <div class="nav-icon">
+            <svg viewBox="0 0 100 100" width="100%" height="100%">
+                <circle cx="50" cy="50" r="30" fill="none" stroke="#a9a9a9" stroke-width="1" />
+                <path class="flame" d="M50,70 Q45,50 50,40 Q55,50 50,70" fill="none" stroke="#a9a9a9" stroke-width="1" />
+            </svg>
+        </div>
+        
+        <!-- Navigation Panel -->
+        <div class="nav-panel">
+            <ul class="nav-links">
+                <li>
+                    <a href="ashen-knight.html">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" stroke="#a9a9a9" d="M12,3 L4,9 L4,21 L20,21 L20,9 L12,3 Z" />
+                            <path fill="none" stroke="#a9a9a9" d="M9,21 L9,14 L15,14 L15,21" />
+                        </svg>
+                        The Ashen Knight
+                    </a>
+                </li>
+                <li>
+                    <a href="chronicle.html">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" stroke="#a9a9a9" d="M6,4 L18,4 L18,20 L6,20 Z" />
+                            <path fill="none" stroke="#a9a9a9" d="M9,8 L15,8 M9,12 L15,12 M9,16 L13,16" />
+                        </svg>
+                        Chronicle of Embers
+                    </a>
+                </li>
+                <li>
+                    <a href="world.html">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <circle cx="12" cy="12" r="8" fill="none" stroke="#a9a9a9" />
+                            <path fill="none" stroke="#a9a9a9" d="M12,4 L12,20 M4,12 L20,12" />
+                        </svg>
+                        World
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <rect x="4" y="4" width="6" height="6" fill="none" stroke="#a9a9a9" />
+                            <rect x="14" y="4" width="6" height="6" fill="none" stroke="#a9a9a9" />
+                            <rect x="4" y="14" width="6" height="6" fill="none" stroke="#a9a9a9" />
+                            <rect x="14" y="14" width="6" height="6" fill="none" stroke="#a9a9a9" />
+                        </svg>
+                        Gallery
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="content-container">
+            <div class="title-with-music">
+                <h1 class="page-title">The Ashen Knight</h1>
+                <div class="music-control" id="music-control">
+                    <svg viewBox="0 0 24 24" width="32" height="32">
+                        <circle cx="12" cy="12" r="10" fill="none" stroke="#a9a9a9" stroke-width="1.5" />
+                        <!-- 音符符号 -->
+                        <path class="music-icon" fill="none" stroke="#a9a9a9" stroke-width="1.5" d="M9,8 L9,16 C9,17.1 8.1,18 7,18 S5,17.1 5,16 S5.9,14 7,14 C7.4,14 7.7,14.1 8,14.3 L8,8 L16,6 L16,14 C16,15.1 15.1,16 14,16 S12,15.1 12,14 S12.9,12 14,12 C14.4,12 14.7,12.1 15,12.3 L15,7 L9,8" />
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="ashen-knight-content">
+                <!-- Left Column - Portrait and Personal Data -->
+                <div class="portrait-section">
+                    <div class="portrait-container">
+                        <img src="images/portrait.jpg" alt="Dasfel Portrait">
+                    </div>
+                    
+                    <div class="personal-data">
+                        <h3>Personal Data</h3>
+                        
+                        <div class="data-item">
+                            <div class="data-label">名讳:</div>
+                            <div class="data-value">Dasfel / 达斯菲尔</div>
+                        </div>
+                        
+                        <div class="data-item">
+                            <div class="data-label">权能:</div>
+                            <div class="data-value">火焰 (The Flame)</div>
+                        </div>
+                        
+                        <div class="data-item">
+                            <div class="data-label">原初:</div>
+                            <div class="data-value">月神骑士 (Knight of the Moon)</div>
+                        </div>
+                        
+                        <div class="data-item">
+                            <div class="data-label">核心:</div>
+                            <div class="data-value">恶龙的眼睛 (Eye of the Dragon)</div>
+                        </div>
+                        
+                        <div class="data-item weapon-info">
+                            <div class="data-label">武装:</div>
+                            <div class="data-value">斯卡提 (Skathi - The Moondial Blade)</div>
+                            <div class="weapon-tooltip">
+                                斯卡提，一把黑色长剑，是达斯菲尔的专属武器。达斯菲尔还在月神麾下时被授予的荣誉的象征，剑细而直，通体漆黑如夜，其上图案为鎏银色月相。
+                            </div>
+                        </div>
+                        
+                        <div class="data-item">
+                            <div class="data-label">年龄:</div>
+                            <div class="data-value">未知 (超过千年)</div>
+                        </div>
+                        
+                        <div class="data-item">
+                            <div class="data-label">身高:</div>
+                            <div class="data-value">168cm</div>
+                        </div>
+                        
+                        <div class="data-item">
+                            <div class="data-label">阵营:</div>
+                            <div class="data-value">中立 (Neutral)</div>
+                        </div>
+                        
+                        <div class="data-item">
+                            <div class="data-label">信仰:</div>
+                            <div class="data-value">月神 (The Moon)</div>
+                        </div>
+                        
+                        <div class="data-item">
+                            <div class="data-label">弱点:</div>
+                            <div class="data-value">心脏(The Heart)</div>
+                        </div>
+                        
+                        <div class="data-item status-info">
+                            <div class="data-label">状态:</div>
+                            <div class="data-value">平静 (Calm)</div>
+                            <div class="status-tooltip">
+                                达斯菲尔目前活跃于伊斯希洛斯的边境地区，扮演着一名热情善良的骑士，惩罚那些她认为应该受到惩罚的人用于练手。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column - Biography -->
+                <div class="bio-section">
+                    <div class="bio-text">
+                        <p>
+                            达斯菲尔曾隶属于月神部队，守护着夜晚的秩序与和平。一场意外使其离开神的住所后，她便前往地狱并获得了火焰的权能。
+                        </p>
+                        
+                        <p>
+                            她既<span class="highlight">见证过月神的光辉</span>，又是<span class="highlight">火焰恶魔</span>。由于达斯菲尔不属于天堂阵营，也不完全属于地狱阵营，而是游走于两者之间的灰色地带，久而久之她对人类的家园也有了兴趣和归属感。
+                        </p>
+                        
+                        <p>
+                            在人类还不能完全控制火的时代，他们敬畏火，崇拜火，由此产生了许多以火为神明的宗教信仰与传说，达斯菲尔由此从人们对火焰的感情中获得力量。
+                        </p>
+                        
+                        <p>
+                            她的武器斯卡提（Skathi）是一把  黑色长剑，剑细而直，通体漆黑如夜，其上图案为鎏银色月相。这把剑与她有着深厚的联系，几乎成为了她的一部分。在战斗中月相图案会发出银色的光芒，如同月光普照。
+                        </p>
+                        
+                        <p>
+                            达斯菲尔的性情残忍且天真，这是由于她生来就是一个习惯于踩在他人脊背上的人。她<span class="highlight">从人类的敬畏中获得力量</span>，却又对人类始终保持着一定的距离。她曾信任过人类，但那段经历最终以背叛告终，这使她变得有些自负排外，但这种状态随着她在人间逗留的时间增加而有所改善。
+                        </p>
+                        
+                        <p>
+                            达斯菲尔内心深处仍然保留着一丝对正义与善念的向往，她在各个地区流浪漫步，偶尔惩治邪恶的存在，除了为了打发时间和经营形象以外，这也是她维护着一种属于自己内心秩序的方式。她绝不是英雄，也不是彻头彻尾的魔鬼，只是介于两者之间的存在，像大多数普通人那样。
+                        </p>
+                        
+                        <p>
+                            达斯菲尔的故事是一个关于背叛、复仇、救赎和追寻的故事。她<span class="highlight">从地狱重生至人间</span>，带着新的目的和使命，继续她的旅程。无论是作为月神的骑士，还是作为火焰恶魔，只能评价说她都是一个复杂的女人。
+                        </p>
+                    </div>
+                    
+                    <!-- Q&A Section -->
+                    <div class="qa-section">
+                        <h3 class="section-title">Q&A</h3>
+                        
+                        <div class="qa-container">
+                            <div class="question">
+                                <h4>如何你遇到了达斯菲尔你会？</h4>
+                                
+                                <div class="options-container">
+                                    <div class="option" data-option="1">
+                                        <div class="option-number">1</div>
+                                        <div class="option-text">请求她为你实现愿望</div>
+                                    </div>
+                                    
+                                    <div class="option" data-option="2">
+                                        <div class="option-number">2</div>
+                                        <div class="option-text">对她说你的心中住着一个魔鬼，让我来帮助你</div>
+                                    </div>
+                                    
+                                    <div class="option" data-option="3">
+                                        <div class="option-number">3</div>
+                                        <div class="option-text">请求她和自己去帮助周围可怜的饿殍</div>
+                                    </div>
+                                    
+                                    <div class="option" data-option="4">
+                                        <div class="option-number">4</div>
+                                        <div class="option-text">送给她从王城带来的礼物</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="answers-container">
+                                <div class="answer" id="answer-1">
+                                    <p>你获得了几辆马车都拉不完的金币、美酒，你的军队踏平了一处城邦，而你也当然成为了此处的主人获得拥护，就在你戴上冠冕的时分，你的鲜血也洒落在宝座与阶梯之上，有什么东西永远地消逝了。</p>
+                                </div>
+                                
+                                <div class="answer" id="answer-2">
+                                    <p>她没有生气，居然真的依照你的建议剖开胸膛向你展示自己的心脏，随后她对护卫说，你在妖言惑众，这就是你戕害他人的借口，现在轮到你展示心中住着天使还是魔鬼了。</p>
+                                </div>
+                                
+                                <div class="answer" id="answer-3">
+                                    <p>她不情不愿地跟着你去实地考察灾民的情况，并向上如实禀报，当那些灾民因为你而获得救助时，她没有冷嘲热讽，后来你不知道为何得到了快速的升迁。</p>
+                                </div>
+                                
+                                <div class="answer" id="answer-4">
+                                    <p>她满面笑容地收下了，随后回敬了你更昂贵新奇的宝石，并对你说道对她来说最好的礼物就是你去信仰月神，从此做一个虔诚善良的人。你对她说有时候信仰反而使人们毫无怜悯地残害异己，达斯菲尔没有激烈地反驳你，只是摇摇头说恐怕她也没有完美的答案。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quote Section -->
+                    <div class="quote-section">
+                        <div class="quote-container">
+                            <div class="quote-mark">"</div>
+                            <div class="quote-text" id="quote-text"></div>
+                            <div class="quote-attribution">— 达斯菲尔</div>
+                            <div class="quote-nav">
+                                <div class="quote-prev">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" stroke="#a9a9a9" d="M15,6 L9,12 L15,18" />
+                                    </svg>
+                                </div>
+                                <div class="quote-indicators">
+                                    <span class="quote-indicator active" data-index="0"></span>
+                                    <span class="quote-indicator" data-index="1"></span>
+                                    <span class="quote-indicator" data-index="2"></span>
+                                    <span class="quote-indicator" data-index="3"></span>
+                                </div>
+                                <div class="quote-next">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" stroke="#a9a9a9" d="M9,6 L15,12 L9,18" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Floating Elements -->
+            <div class="floating-elements">
+                <div class="floating-ember ember-1"></div>
+                <div class="floating-ember ember-2"></div>
+                <div class="floating-ember ember-3"></div>
+                <div class="floating-ember ember-4"></div>
+                <div class="floating-ember ember-5"></div>
+                <div class="floating-ember ember-6"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World - Dasfel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-content">
+        <!-- Navigation Icon -->
+        <div class="nav-icon">
+            <svg viewBox="0 0 100 100" width="100%" height="100%">
+                <circle cx="50" cy="50" r="30" fill="none" stroke="#a9a9a9" stroke-width="1" />
+                <path class="flame" d="M50,70 Q45,50 50,40 Q55,50 50,70" fill="none" stroke="#a9a9a9" stroke-width="1" />
+            </svg>
+        </div>
+        
+        <!-- Navigation Panel -->
+        <div class="nav-panel">
+            <ul class="nav-links">
+                <li>
+                    <a href="ashen-knight.html">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" stroke="#a9a9a9" d="M12,3 L4,9 L4,21 L20,21 L20,9 L12,3 Z" />
+                            <path fill="none" stroke="#a9a9a9" d="M9,21 L9,14 L15,14 L15,21" />
+                        </svg>
+                        The Ashen Knight
+                    </a>
+                </li>
+                <li>
+                    <a href="chronicle.html">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" stroke="#a9a9a9" d="M6,4 L18,4 L18,20 L6,20 Z" />
+                            <path fill="none" stroke="#a9a9a9" d="M9,8 L15,8 M9,12 L15,12 M9,16 L13,16" />
+                        </svg>
+                        Chronicle of Embers
+                    </a>
+                </li>
+                <li>
+                    <a href="world.html">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <circle cx="12" cy="12" r="8" fill="none" stroke="#a9a9a9" />
+                            <path fill="none" stroke="#a9a9a9" d="M12,4 L12,20 M4,12 L20,12" />
+                        </svg>
+                        World
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <rect x="4" y="4" width="6" height="6" fill="none" stroke="#a9a9a9" />
+                            <rect x="14" y="4" width="6" height="6" fill="none" stroke="#a9a9a9" />
+                            <rect x="4" y="14" width="6" height="6" fill="none" stroke="#a9a9a9" />
+                            <rect x="14" y="14" width="6" height="6" fill="none" stroke="#a9a9a9" />
+                        </svg>
+                        Gallery
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="content-container">
+            <h1 class="page-title">World</h1>
+            
+            <!-- World Navigation -->
+            <div class="world-navigation">
+                <div class="world-nav-item active" data-section="overview">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <circle cx="12" cy="12" r="8" fill="none" stroke="#a9a9a9" />
+                        <path fill="none" stroke="#a9a9a9" d="M12,4 L12,20 M4,12 L20,12" />
+                    </svg>
+                    <span>世界概览</span>
+                </div>
+                <div class="world-nav-item" data-section="realms">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" stroke="#a9a9a9" d="M5,5 L19,5 L19,19 L5,19 Z" />
+                        <path fill="none" stroke="#a9a9a9" d="M9,9 L15,9 M9,12 L15,12 M9,15 L15,15" />
+                    </svg>
+                    <span>三界法则</span>
+                </div>
+                <div class="world-nav-item" data-section="nations">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" stroke="#a9a9a9" d="M3,6 L9,3 L15,6 L21,3 L21,18 L15,21 L9,18 L3,21 L3,6 Z" />
+                        <path fill="none" stroke="#a9a9a9" d="M9,3 L9,18 M15,6 L15,21" />
+                    </svg>
+                    <span>诸国风貌</span>
+                </div>
+                <div class="world-nav-item" data-section="faiths">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <circle cx="12" cy="12" r="5" fill="none" stroke="#a9a9a9" />
+                        <path fill="none" stroke="#a9a9a9" d="M12,2 L12,7 M12,17 L12,22 M2,12 L7,12 M17,12 L22,12" />
+                    </svg>
+                    <span>信仰之争</span>
+                </div>
+            </div>
+            
+            <!-- World Overview Section -->
+            <div class="world-section active" id="overview-section">
+                <div class="world-overview">
+                    <div class="overview-intro">
+                        <h2>世界概览</h2>
+                        <p class="overview-desc">
+                            这是一个由光明与黑暗、秩序与混沌交织而成的世界。天堂、人间、地狱三者并存，各自遵循着不同的法则。在这个世界中，恶魔的力量来源于恐惧，但无人信仰恶魔，人们对神邸信仰的冲突又往往导致战争与毁灭。
+                        </p>
+                    </div>
+                    
+                    <div class="world-structure">
+                        <div class="structure-item heaven">
+                            <div class="structure-icon">
+                                <svg viewBox="0 0 24 24" width="60" height="60">
+                                    <circle cx="12" cy="12" r="8" fill="none" stroke="#c0d8e8" stroke-width="2" />
+                                    <path fill="none" stroke="#c0d8e8" d="M12,4 L12,20 M4,12 L20,12" />
+                                    <circle cx="12" cy="12" r="3" fill="#c0d8e8" opacity="0.3" />
+                                </svg>
+                            </div>
+                            <h3>天堂</h3>
+                            <p>秩序与光明的领域，由众神统治。月神菲欧斯缇涅和太阳神菲欧肯索，是其中最重要的两位神祇，他们的理念冲突影响着世界的格局。</p>
+                        </div>
+                        
+                        <div class="structure-item mortal">
+                            <div class="structure-icon">
+                                <svg viewBox="0 0 24 24" width="60" height="60">
+                                    <circle cx="12" cy="8" r="4" fill="none" stroke="#d2b48c" stroke-width="2" />
+                                    <path fill="none" stroke="#d2b48c" d="M4,20 C4,15 8,14 12,14 C16,14 20,15 20,20" />
+                                    <circle cx="12" cy="12" r="8" fill="none" stroke="#d2b48c" stroke-width="1" opacity="0.3" />
+                                </svg>
+                            </div>
+                            <h3>人间</h3>
+                            <p>凡人居住的世界，被分为多个国家版块。伊斯希洛斯、斯缇罗斯、拉古塔斯达是其中最重要的三个地区，各有独特的文化和信仰。</p>
+                        </div>
+                        
+                        <div class="structure-item hell">
+                            <div class="structure-icon">
+                                <svg viewBox="0 0 24 24" width="60" height="60">
+                                    <path d="M12,22 C8,22 5,19 5,15 C5,12 6,10 8,8 C8,12 10,11 11,9 C12,12 14,12 14,9 C16,11 17,13 17,15 C17,19 16,22 12,22 Z" fill="none" stroke="#ff6b6b" stroke-width="2" />
+                                    <circle cx="12" cy="15" r="3" fill="#ff6b6b" opacity="0.3" />
+                                </svg>
+                            </div>
+                            <h3>地狱</h3>
+                            <p>混沌与杀伐的领域，是热爱把割下头颅当做砍倒树木那样寻常事情的征服者的归宿。这里没有公认的统治者，而是由无数强大的恶魔争夺地盘和权力。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="world-balance">
+                        <h3>力量的平衡</h3>
+                        <div class="balance-diagram">
+                            <div class="balance-element light">
+                                <div class="element-icon">
+                                    <svg viewBox="0 0 24 24" width="40" height="40">
+                                        <circle cx="12" cy="12" r="5" fill="none" stroke="#c0d8e8" />
+                                        <path fill="none" stroke="#c0d8e8" d="M12,2 L12,7 M12,17 L12,22 M2,12 L7,12 M17,12 L22,12" />
+                                    </svg>
+                                </div>
+                                <span>光明</span>
+                            </div>
+                            <div class="balance-center">
+                                <svg viewBox="0 0 24 24" width="60" height="60">
+                                    <circle cx="12" cy="12" r="10" fill="none" stroke="#a9a9a9" />
+                                    <path d="M12,2 A10,10 0 0 1 12,22 A10,10 0 0 0 12,2" fill="#c0d8e8" opacity="0.5" />
+                                    <path d="M12,2 A10,10 0 0 0 12,22 A10,10 0 0 1 12,2" fill="#ff6b6b" opacity="0.5" />
+                                </svg>
+                            </div>
+                            <div class="balance-element dark">
+                                <div class="element-icon">
+                                    <svg viewBox="0 0 24 24" width="40" height="40">
+                                        <path d="M12,22 C8,22 5,19 5,15 C5,12 6,10 8,8 C8,12 10,11 11,9 C12,12 14,12 14,9 C16,11 17,13 17,15 C17,19 16,22 12,22 Z" fill="none" stroke="#ff6b6b" />
+                                    </svg>
+                                </div>
+                                <span>黑暗</span>
+                            </div>
+                        </div>
+                        <p>达斯菲尔正是这种平衡的体现——她既是月光的守护者，又是烈焰的掌控者，游走于光明与黑暗之间的灰色地带。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Three Realms Section -->
+            <div class="world-section" id="realms-section">
+                <div class="realms-grid">
+                    <div class="realm-card heaven-realm">
+                        <div class="realm-header">
+                            <div class="realm-icon">
+                                <svg viewBox="0 0 24 24" width="40" height="40">
+                                    <circle cx="12" cy="12" r="8" fill="none" stroke="#c0d8e8" stroke-width="2" />
+                                    <path fill="none" stroke="#c0d8e8" d="M12,4 L12,20 M4,12 L20,12" />
+                                </svg>
+                            </div>
+                            <h3>天堂法则</h3>
+                        </div>
+                        <div class="realm-content">
+                            <p><strong>统治者：</strong>众神议会</p>
+                            <p><strong>象征理念：</strong>秩序与光明</p>
+                            <p><strong>力量来源：</strong>诞生之初注定</p>
+                            <p><strong>主要神祇：</strong></p>
+                            <ul>
+                                <li>月神菲欧斯缇涅 - 夜晚、梦境、神秘</li>
+                                <li>太阳神菲欧肯索 - 光明、力量</li>
+                                <li>智慧女神维斯当戈 - 知识、战略</li>
+                                
+                            </ul>
+                            <p>神明的力量不来自于歌颂与信仰，那只是人们一厢情愿的偏信，祂们的存在意义在于惩戒与平衡。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="realm-card mortal-realm">
+                        <div class="realm-header">
+                            <div class="realm-icon">
+                                <svg viewBox="0 0 24 24" width="40" height="40">
+                                    <circle cx="12" cy="8" r="4" fill="none" stroke="#d2b48c" stroke-width="2" />
+                                    <path fill="none" stroke="#d2b48c" d="M4,20 C4,15 8,14 12,14 C16,14 20,15 20,20" />
+                                </svg>
+                            </div>
+                            <h3>人间法则</h3>
+                        </div>
+                        <div class="realm-content">
+                            <p><strong>统治者：</strong>各国君主与教会</p>
+                            <p><strong>核心理念：</strong>生存与发展</p>
+                            <p><strong>力量来源：</strong>魔法、科技、信仰</p>
+                            <p><strong>主要势力：</strong></p>
+                            <ul>
+                                <li>月神教会 </li>
+                                <li>太阳教会 </li>
+                                <li>各国王室 </li>
+                                <li>魔法学院 </li>
+                            </ul>
+                            <p>人间是各路力量交汇的战场，凡人在其中寻求生存与意义。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="realm-card hell-realm">
+                        <div class="realm-header">
+                            <div class="realm-icon">
+                                <svg viewBox="0 0 24 24" width="40" height="40">
+                                    <path d="M12,22 C8,22 5,19 5,15 C5,12 6,10 8,8 C8,12 10,11 11,9 C12,12 14,12 14,9 C16,11 17,13 17,15 C17,19 16,22 12,22 Z" fill="none" stroke="#ff6b6b" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <h3>地狱法则</h3>
+                        </div>
+                        <div class="realm-content">
+                            <p><strong>统治者：</strong>恶魔领主们</p>
+                            <p><strong>核心理念：</strong>混沌与欲望</p>
+                            <p><strong>力量来源：</strong>负面情绪</p>
+                            <p><strong>主要存在：</strong></p>
+                            <ul>
+                                <li>恶龙 - 恶魔的一个分支</li>
+                                <li>恶魔领主 - 地狱最普遍存在</li>
+                                <li>迷失灵魂 - 受惩戒的凡人</li>
+                            </ul>
+                            <p>地狱的时空扭曲，可以无止境地挑战和杀伐，只要你支付得起代价的话</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Nations Section -->
+            <div class="world-section" id="nations-section">
+                <div class="nations-container">
+                    <div class="nation-card ishilos">
+                        <div class="nation-banner">
+                            <h3>伊斯希洛斯国</h3>
+                            <div class="nation-symbol">
+                                <svg viewBox="0 0 24 24" width="30" height="30">
+                                    <circle cx="12" cy="12" r="10" fill="none" stroke="#c0d8e8" stroke-width="1" />
+                                    <path d="M12,2 A10,10 0 0 1 12,22 A10,10 0 0 0 12,2" fill="#c0d8e8" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="nation-info">
+                            <p><strong>位置：</strong>大陆北部</p>
+                            <p><strong>特色：</strong>月神教会发源地</p>
+                            <p><strong>文化：</strong>崇尚艺术与知识</p>
+                            <p><strong>政治：</strong>多个城邦制度</p>
+                            <p><strong>重要地点：</strong>月神神殿</p>
+                        </div>
+                        <div class="nation-desc">
+                            <p>伊斯希洛斯是一个古老的国家，拥有悠久的历史和文化。这里的人民崇尚艺术和知识，魔法研究十分发达。领土中央的广阔平原上建立了许多城邦，它们之间既有合作也有竞争。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="nation-card stiros">
+                        <div class="nation-banner">
+                            <h3>斯缇罗斯王国</h3>
+                            <div class="nation-symbol">
+                                <svg viewBox="0 0 24 24" width="30" height="30">
+                                    <circle cx="12" cy="12" r="8" fill="none" stroke="#ffd700" stroke-width="1" />
+                                    <path fill="none" stroke="#ffd700" d="M12,4 L12,20 M4,12 L20,12" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="nation-info">
+                            <p><strong>位置：</strong>大陆中部</p>
+                            <p><strong>特色：</strong>华丽宫廷文化</p>
+                            <p><strong>文化：</strong>严格等级制度</p>
+                            <p><strong>政治：</strong>君主专制</p>
+                            <p><strong>重要地点：</strong>金色城市卡尼亚、日神大教堂</p>
+                        </div>
+                        <div class="nation-desc">
+                            <p>斯缇罗斯是一个强大的王国，以其奢靡的宫廷和严格的等级制度而闻名。太阳教会在这里有着巨大的影响力，几乎控制了王国的政治和军事。杏花是王国的象征物之一。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="nation-card ragutasda">
+                        <div class="nation-banner">
+                            <h3>拉古塔斯达</h3>
+                            <div class="nation-symbol">
+                                <svg viewBox="0 0 24 24" width="30" height="30">
+                                    <circle cx="12" cy="12" r="8" fill="none" stroke="#9370db" stroke-width="1" />
+                                    <path fill="none" stroke="#9370db" d="M8,8 L16,16 M16,8 L8,16" />
+                                    <circle cx="12" cy="12" r="3" fill="none" stroke="#9370db" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="nation-info">
+                            <p><strong>位置：</strong>南方海域</p>
+                            <p><strong>特色：</strong>神秘岛国</p>
+                            <p><strong>文化：</strong>自然崇拜</p>
+                            <p><strong>政治：</strong>议会制度</p>
+                            <p><strong>重要地点：</strong>乐园</p>
+                        </div>
+                        <div class="nation-desc">
+                            <p>拉古塔斯达是一个由龙统治的国度，族群被各国忌惮和围剿，最后他们被驱逐出家乡四处流浪，但仍现存不少族裔后代。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Faiths Section -->
+            <div class="world-section" id="faiths-section">
+                <div class="faiths-comparison">
+                    <div class="faith-card moon-faith">
+                        <div class="faith-header">
+                            <div class="faith-icon">
+                                <svg viewBox="0 0 24 24" width="50" height="50">
+                                    <circle cx="12" cy="12" r="10" fill="none" stroke="#c0d8e8" stroke-width="2" />
+                                    <path d="M12,2 A10,10 0 0 1 12,22 A10,10 0 0 0 12,2" fill="#c0d8e8" />
+                                </svg>
+                            </div>
+                            <h3>月神教会</h3>
+                            <p class="faith-motto">"在黑暗中寻找光明，在混沌中维持平衡"</p>
+                        </div>
+                        <div class="faith-content">
+                            <div class="faith-section">
+                                <h4>核心教义</h4>
+                                <ul>
+                                    <li>平衡与和谐</li>
+                                    <li>智慧与内省</li>
+                                    <li>保护弱者</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="faith-section">
+                                <h4>组织结构</h4>
+                                <ul>
+                                    <li>大祭司 - 教会领袖</li>
+                                    <li>骑士团 - 武装力量</li>
+                                    <li>学者议会 - 知识守护者</li>
+                                    <li>普通祭司 - 信徒指导</li>
+                                </ul>
+                            </div>
+                            <div class="faith-section">
+                                <h4>现状</h4>
+                                <p>曾经强盛的月神教会如今已经衰落，但他们的理念仍然在一些人心中燃烧着希望的火苗。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="conflict-indicator">
+                        <div class="conflict-symbol">
+                            <svg viewBox="0 0 24 24" width="60" height="60">
+                                <path fill="none" stroke="#ff6b6b" stroke-width="2" d="M6,6 L18,18 M6,18 L18,6" />
+                                <circle cx="12" cy="12" r="8" fill="none" stroke="#a9a9a9" stroke-width="1" />
+                            </svg>
+                        </div>
+                        <h4>永恒的冲突</h4>
+                        <div class="conflict-content">
+                            <div class="conflict-section">
+                                <h5>冲突根源</h5>
+                                <ul>
+                                    
+                                    <li>权力争夺 - 谁讲述的故事是真实版本？</li>
+                                    <li>历史仇恨 - 世代积怨</li>
+                                    <li>资源竞争 - 信徒与领土</li>
+                                </ul>
+                            </div>
+                            <div class="conflict-section">
+                                <h5>重大事件</h5>
+                                <ul>
+                                   
+                                    <li>圣殿焚毁 - 月神神殿被毁</li>
+                                    <li>异端审判 - 大规模迫害</li>
+                                    <li>地下抵抗 - 秘密组织兴起</li>
+                                </ul>
+                            </div>
+                            <div class="conflict-section">
+                                <h5>影响范围</h5>
+                                <ul>
+                                    <li>政治分裂 - 各国站队</li>
+                                    <li>文化冲突 - 价值观对立</li>
+                                    <li>经济制裁 - 贸易限制</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="conflict-section">
+                                <h5>当前局势</h5>
+                                <p>太阳教会占据主导地位，但月神教会的地下网络依然活跃。冲突已从公开战争转为暗中较量，双方都在寻找能够打破僵局的关键力量。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faith-card sun-faith">
+                        <div class="faith-header">
+                            <div class="faith-icon">
+                                <svg viewBox="0 0 24 24" width="50" height="50">
+                                    <circle cx="12" cy="12" r="8" fill="none" stroke="#ffd700" stroke-width="2" />
+                                    <path fill="none" stroke="#ffd700" d="M12,4 L12,2 M12,22 L12,20 M4,12 L2,12 M22,12 L20,12 M6,6 L4,4 M20,20 L18,18 M6,18 L4,20 M20,4 L18,6" />
+                                </svg>
+                            </div>
+                            <h3>太阳教会</h3>
+                            <p class="faith-motto">"以光明净化黑暗，宣扬神的权威"</p>
+                        </div>
+                        <div class="faith-content">
+                            <div class="faith-section">
+                                <h4>核心教义</h4>
+                                <ul>
+                                    <li>秩序与净化</li>
+                                    <li>权威与服从</li>
+                                    <li>书写在人心中的法律</li>
+                                  
+                                </ul>
+                            </div>
+                            <div class="faith-section">
+                                <h4>组织结构</h4>
+                                <ul>
+                                    <li>教皇 - 至高领袖</li>
+                                    <li>太阳骑士团 - 精锐军队</li>
+                                    <li>审判庭 - 主要负责处置异端</li>
+                                    <li>传教士 </li>
+                                </ul>
+                            </div>
+                            <div class="faith-section">
+                                <h4>现状</h4>
+                                <p>太阳教会正处于鼎盛时期，在斯缇罗斯王国拥有巨大影响力，并积极向其他地区扩张，试图建立统一的宗教秩序。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
