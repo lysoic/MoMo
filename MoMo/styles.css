@@ -344,6 +344,9 @@ a:hover {
     font-size: 1.2rem;
     line-height: 1.8;
     color: #000000; /* 添加黑色文本颜色 */
+    background-color: rgba(255, 255, 255, 0.8); /* 添加半透明白色背景 */
+    padding: 1.5rem; /* 添加内边距 */
+    border-radius: 5px; /* 添加圆角 */
 }
 
 .bio-text p {
@@ -353,6 +356,9 @@ a:hover {
 .highlight {
     color: #0047AB; /* 将浅蓝色改为深蓝色 */
     font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.5); /* 添加半透明背景 */
+    padding: 0 3px; /* 添加水平内边距 */
+    border-radius: 2px; /* 添加圆角 */
 }
 
 /* Power Showcase Styles */
@@ -1545,5 +1551,58 @@ a:hover {
     .chapter-content {
         width: 80%;
         margin-left: 60px !important;
+    }
+    
+    /* 改善移动端文字显示 */
+    .bio-text {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        padding: 1rem;
+    }
+    
+    .bio-text p {
+        margin-bottom: 1rem;
+    }
+    
+    .ashen-knight-content {
+        gap: 1.5rem;
+    }
+    
+    .qa-container {
+        padding: 1rem;
+    }
+    
+    .question h4 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .options-container {
+        gap: 1rem;
+    }
+    
+    .option {
+        padding: 0.8rem;
+    }
+    
+    .option-text {
+        font-size: 1rem;
+    }
+    
+    .answer {
+        padding: 1rem;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    
+    /* 改善工具提示在移动端的显示 */
+    .weapon-tooltip, .status-tooltip {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        max-width: 300px;
+        z-index: 100;
     }
 }

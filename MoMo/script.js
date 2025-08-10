@@ -78,29 +78,38 @@ if (backgroundMusic && window.location.pathname.includes('ashen-knight.html')) {
         const quotePrev = document.querySelector('.quote-prev');
         const quoteNext = document.querySelector('.quote-next');
         
-        // Function to type out the quote with typewriter effect
-        function typeQuote(text, element) {
-            element.textContent = '';
-            element.classList.add('typewriter');
-            
-            let i = 0;
-            const speed = 50; // typing speed in milliseconds
-            
-            function type() {
-                if (i < text.length) {
-                    element.textContent += text.charAt(i);
-                    i++;
-                    setTimeout(type, speed);
-                } else {
-                    // Remove typewriter class when done typing
-                    setTimeout(() => {
-                        element.classList.remove('typewriter');
-                    }, 500);
-                }
-            }
-            
-            type();
+// Function to type out the quote with typewriter effect
+function typeQuote(text, element) {
+    element.textContent = '';
+    // 不再添加typewriter类，避免与CSS动画冲突
+    
+    let i = 0;
+    const speed = 50; // typing speed in milliseconds
+    
+    // 先设置完整文本，但设置为不可见
+    element.textContent = text;
+    element.style.visibility = 'hidden';
+    
+    // 清空文本，然后开始逐字符添加
+    element.textContent = '';
+    element.style.visibility = 'visible';
+    element.style.borderRight = '2px solid var(--accent-silver-blue)';
+    
+    function type() {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        } else {
+            // 打字效果完成后，移除光标效果
+            setTimeout(() => {
+                element.style.borderRight = 'none';
+            }, 500);
         }
+    }
+    
+    type();
+}
         
         // Function to update active indicator
         function updateIndicators() {
